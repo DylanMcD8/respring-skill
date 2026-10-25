@@ -8,6 +8,10 @@ A reusable AI skill for restoring classic 32-bit iOS games while preserving thei
 
 It guides an agent through binary intake, execution-strategy selection, compatibility diagnosis, rendering and timing fixes, bounded native acceleration, save migration, and reproducible delivery. It does **not** include an emulator, automatic converter, game binaries, artwork, original source recovery, or a promise that every app can be restored.
 
+## Contribute to Respring
+
+After successfully converting an app, please consider contributing it to the Respring project! This can include sharing your GitHub repo on this website, adding your findings and work to the skill, or both. Send me an [email](mailto:respring@941archive.com) or [DM](https://twitter.com/DylanMcD8) to get started.
+
 ## Install
 
 Copy `skills/restore-legacy-ios-apps` into your Codex skills directory, normally `~/.codex/skills/` (or `$CODEX_HOME/skills/` when configured). Keep its references, assets and agents folders together. Restart or reload your client's skill discovery as needed. Do not overwrite an existing installation without comparing your local changes.
