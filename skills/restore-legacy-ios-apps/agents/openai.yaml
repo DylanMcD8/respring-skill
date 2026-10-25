@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legacy iOS Restoration"
+  short_description: "Restore classic iOS games with evidence and fidelity"
+  default_prompt: "Use $restore-legacy-ios-apps to inspect this legacy iOS app and choose a faithful restoration strategy."

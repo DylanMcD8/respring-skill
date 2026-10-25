@@ -1,0 +1,906 @@
+{
+  "snapshot": "2026-10-25",
+  "basis": "Distilled from two engineering reports; public source hashes verified locally during skill preparation. Historical app tests were not rerun.",
+  "repositories": [
+    {
+      "app": "Chuzzle",
+      "repository": "https://github.com/DylanMcD8/respring-chuzzle",
+      "commit": "db11d651554ba212b90ce7d71306b8f6835740fc",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "82c133a060f29aabc7a1ee86020f1aff76efef430219000421b459b17e717639",
+          "topic": "Current Chuzzle architecture and features",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/README.md"
+        },
+        {
+          "path": "BUILDING.md",
+          "sha256": "809e0bccbcab98e54ca16d04cfcdd08838c605338b09da3a4f1ea347b74e1606",
+          "topic": "Chuzzle build, execution, and packaging",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/BUILDING.md"
+        },
+        {
+          "path": "OriginalPort/generate_native.py",
+          "sha256": "3fc2f0612f4fa1eaaeea6cd686a7802a3cef067f8d739216d650aa6e182d2470",
+          "topic": "Static game translation generator",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/OriginalPort/generate_native.py"
+        },
+        {
+          "path": "OriginalPort/native-manifest.json",
+          "sha256": "40610a40aec70d9fad8c8947696c6a6f3c1971a2cb12b43544775270b62c721f",
+          "topic": "Chuzzle generation statistics",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/OriginalPort/native-manifest.json"
+        },
+        {
+          "path": "OriginalPort/compatibility-core/src/cpu/interpreter/mod.rs",
+          "sha256": "ee8beec5d56bd0eab216c82aed439a1bc5b18eac24d733895374c9f337906593",
+          "topic": "Translated execution and optional reference interpreter",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/OriginalPort/compatibility-core/src/cpu/interpreter/mod.rs"
+        },
+        {
+          "path": "docs/RENDERING.md",
+          "sha256": "a29d6badbd872d219cb53b57d6636c1454e68f9efde3c4394d08fd2954a90401",
+          "topic": "Final rendering and timing policy and measurements",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/docs/RENDERING.md"
+        },
+        {
+          "path": "OriginalPort/compatibility-core/src/fs.rs",
+          "sha256": "98d3f0350b2735ff2df46d0ebb2afdf1ffe7574adb9f8ac9371d2b46b041592c",
+          "topic": "Guest filesystem atomic-write routing",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/OriginalPort/compatibility-core/src/fs.rs"
+        },
+        {
+          "path": "OriginalPort/runtime-manifest.json",
+          "sha256": "0e75611600865fbe7b29fc5986e06eed0137aabe703068d049f5bb2e5f607ea1",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/OriginalPort/runtime-manifest.json"
+        },
+        {
+          "path": "OriginalPort/compatibility-core/src/frameworks/foundation/ns_data.rs",
+          "sha256": "fb0f0c45f9b541d5ef6e5f76c0a04cab973ac14a9379c849ff427176e3c7687b",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-chuzzle/blob/db11d651554ba212b90ce7d71306b8f6835740fc/OriginalPort/compatibility-core/src/frameworks/foundation/ns_data.rs"
+        }
+      ]
+    },
+    {
+      "app": "Koi Pond",
+      "repository": "https://github.com/DylanMcD8/respring-koi-pond",
+      "commit": "e48afd82a3b047edeb7a221851e6f15d5e5d9264",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "156bcb2408267103fca25d2a0ed17d95d01b9a7bd08b0b7c3515d109ba55d544",
+          "topic": "Koi execution and features",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/README.md"
+        },
+        {
+          "path": "BUILDING.md",
+          "sha256": "8d431f946065898e317761e0cb6012ec0db025fe4b185028b1d06ec88a9c964b",
+          "topic": "Koi build and test entry points",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/BUILDING.md"
+        },
+        {
+          "path": "OriginalPort/native-manifest.json",
+          "sha256": "6a91bb9f8c403915eaf8d142cb40eceec24b2ef04084e8e38e1702370898b39e",
+          "topic": "Koi generation statistics",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/native-manifest.json"
+        },
+        {
+          "path": "OriginalPort/compatibility-core/src/frameworks/opengles/gles_guest.rs",
+          "sha256": "e70804a45c2f1571a3b8181c00f018adf803ded5a84b1228ac5cc38926028d4e",
+          "topic": "Koi offscreen texture scaling",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/compatibility-core/src/frameworks/opengles/gles_guest.rs"
+        },
+        {
+          "path": "OriginalPort/patch_framerate.py",
+          "sha256": "fe2a317fec5c6fec9edf363cbceeb192f8a623c0ccdc7b8853ff4c8c32bb0561",
+          "topic": "Guarded timing coefficients and frame-rate variants",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/patch_framerate.py"
+        },
+        {
+          "path": "OriginalPort/compatibility-core/src/cpu/interpreter/koi_touch_timing.rs",
+          "sha256": "370058bd6141defaf663ef4eab07823e2c07ee2babaadbbaa86dbb6e7dfafa3a",
+          "topic": "Production per-touch disturbance normalization",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/compatibility-core/src/cpu/interpreter/koi_touch_timing.rs"
+        },
+        {
+          "path": "OriginalPort/compatibility-core/src/frameworks/audio_toolbox/audio_services.rs",
+          "sha256": "111042f00e32edd0ab05ec949f855dae870ed6b21eb197916c1ac2ab7f1ca4a4",
+          "topic": "Native vibration forwarding",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/compatibility-core/src/frameworks/audio_toolbox/audio_services.rs"
+        },
+        {
+          "path": "OriginalPort/runtime-manifest.json",
+          "sha256": "0e75611600865fbe7b29fc5986e06eed0137aabe703068d049f5bb2e5f607ea1",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/runtime-manifest.json"
+        },
+        {
+          "path": "OriginalPort/generate_native.py",
+          "sha256": "96da78ce7cc04493440f5f51bf866ef147bad7fc87ef8fdabc65c2469075ac5a",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/generate_native.py"
+        },
+        {
+          "path": "OriginalPort/ios/main.m",
+          "sha256": "d918b41266441717f0a6c56b966df0ac3fcb89c381b2a37776444fec6f52013e",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/ios/main.m"
+        },
+        {
+          "path": "OriginalPort/Tests/test_touch_timing.py",
+          "sha256": "5456a04e000716e961c2629b237f685fcff2e1eabc3a808b2b07fc92a407f332",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/Tests/test_touch_timing.py"
+        },
+        {
+          "path": "OriginalPort/Tests/test_framerate_patch.py",
+          "sha256": "1a126f1ec32b8b1d5bf98fa21ad9eb91a54d379068d14e473fb5481812559d24",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/Tests/test_framerate_patch.py"
+        },
+        {
+          "path": "OriginalPort/Tests/test_sleep_timer.py",
+          "sha256": "b339eaa765d20b928d9e26d1b1af69cd57e9907bad54afe3a47dda8ea46b4a35",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/Tests/test_sleep_timer.py"
+        },
+        {
+          "path": "OriginalPort/Tests/test_sleep_host.py",
+          "sha256": "435bf24461e1008bea29d87ea70817be1ee409ee90f41db253b24aeacaf34469",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-koi-pond/blob/e48afd82a3b047edeb7a221851e6f15d5e5d9264/OriginalPort/Tests/test_sleep_host.py"
+        }
+      ]
+    },
+    {
+      "app": "Skee-Ball",
+      "repository": "https://github.com/DylanMcD8/respring-skee-ball",
+      "commit": "fbcf52c3851857a83f5748dbed3ce460c060e69c",
+      "files": [
+        {
+          "path": "BUILDING.md",
+          "sha256": "9aa40f9a903f0b6d9ef381849071f956bcc0ca8d819bea09aa838414996b67cc",
+          "topic": "Current Skee-Ball interpreter build",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball/blob/fbcf52c3851857a83f5748dbed3ce460c060e69c/BUILDING.md"
+        },
+        {
+          "path": "CompatibilityProbe/Tests/check_swp.py",
+          "sha256": "8d4299c3abc217ba164ba435e5c05772491836a184fb847228f48be8543d1a74",
+          "topic": "Production CPU semantic regression harness",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball/blob/fbcf52c3851857a83f5748dbed3ce460c060e69c/CompatibilityProbe/Tests/check_swp.py"
+        },
+        {
+          "path": "CompatibilityProbe/compatibility-core/src/libc/sys/mman.rs",
+          "sha256": "8cf70ff8b6262a8ae09b5271caf556bc7635f7a4438de4ff9c7ae7c271340bbb",
+          "topic": "Guest memory-map semantics",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball/blob/fbcf52c3851857a83f5748dbed3ce460c060e69c/CompatibilityProbe/compatibility-core/src/libc/sys/mman.rs"
+        },
+        {
+          "path": "CompatibilityProbe/compatibility-core/src/frameworks/opengles/skee_layout.rs",
+          "sha256": "ac5dbe22cad0132d0db3b7b08f8ebdc1772940a6c4727aa6bd7695df9acc4c31",
+          "topic": "Live world dimensions and centered UI viewport",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball/blob/fbcf52c3851857a83f5748dbed3ce460c060e69c/CompatibilityProbe/compatibility-core/src/frameworks/opengles/skee_layout.rs"
+        },
+        {
+          "path": "CompatibilityProbe/Tests/live_layout.rs",
+          "sha256": "c8dffaf69852e1607c25843996c459148d9905f81e9765fb5a445561efdba538",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball/blob/fbcf52c3851857a83f5748dbed3ce460c060e69c/CompatibilityProbe/Tests/live_layout.rs"
+        }
+      ]
+    },
+    {
+      "app": "Skee Free",
+      "repository": "https://github.com/DylanMcD8/respring-skee-ball-free",
+      "commit": "2d3e0c200b51789ca4da0ff405cf0751fb2270ec",
+      "files": [
+        {
+          "path": "BUILDING.md",
+          "sha256": "af9ad50f6e3aac3b00427eb6d7f760f45557b289b2e8f6120c021a916ceea15a",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball-free/blob/2d3e0c200b51789ca4da0ff405cf0751fb2270ec/BUILDING.md"
+        }
+      ]
+    },
+    {
+      "app": "Skee-Ball HD",
+      "repository": "https://github.com/DylanMcD8/respring-skee-ball-hd",
+      "commit": "336a50c265c3e143a4bb418477305cc14477a907",
+      "files": [
+        {
+          "path": "BUILDING.md",
+          "sha256": "f0703478be2b62a4e22ece02cfe83309957e4593c1575d2546e9cfb9f85bc53f",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball-hd/blob/336a50c265c3e143a4bb418477305cc14477a907/BUILDING.md"
+        },
+        {
+          "path": "CompatibilityProbe/compatibility-core/src/cpu/interpreter/vfp.rs",
+          "sha256": "2d4df594fb9f63894f67bb1331a5a38dedab83382206e9476617f6945aa3eae0",
+          "topic": "implementation evidence",
+          "url": "https://github.com/DylanMcD8/respring-skee-ball-hd/blob/336a50c265c3e143a4bb418477305cc14477a907/CompatibilityProbe/compatibility-core/src/cpu/interpreter/vfp.rs"
+        }
+      ]
+    },
+    {
+      "app": "Peggle",
+      "repository": "https://github.com/DylanMcD8/respring-peggle",
+      "commit": "8f6629c3c1860bc9bc3902f3ff50d86a53373ee0",
+      "files": [
+        {
+          "topic": "build_and_release",
+          "path": "BUILDING.md",
+          "bytes": 3805,
+          "sha256": "cf7df798dc10663fa5ee03ae933b3319e090d02c05e0488f0288aeb59100c451",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/BUILDING.md"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "docs/ICLOUD.md",
+          "bytes": 5044,
+          "sha256": "7d1f31210d61899ec8072ecdc4360f86af2df11189d5962dd264212641c8cab4",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/docs/ICLOUD.md"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Scripts/package_ipa.py",
+          "bytes": 1741,
+          "sha256": "7f6190ce4913d1e7a451d804654745f8e1766d3a39f443f749bb0b1212aedd61",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Scripts/package_ipa.py"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Scripts/audit_release.py",
+          "bytes": 2351,
+          "sha256": "18f1bb5e1f187cdd516a845c98d8954378a7c9a71c0abbddbba214436c133169",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Scripts/audit_release.py"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Original/payload-sha256.json",
+          "bytes": 173414,
+          "sha256": "8978a95da3c4417df261dc2a5bb190fd7ac77cf38fa252136b6f6b1623b84dbf",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Original/payload-sha256.json"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Compatibility/ios/build.sh",
+          "bytes": 8036,
+          "sha256": "45e6418064012aa6feee5b757f16d2e45c8bf61b22f1d326004f24ba831c2fc8",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/build.sh"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/main.m",
+          "bytes": 7928,
+          "sha256": "bdff55e75a5878571b8943db3f7e11d3c1b33dd2b20ff130dfeb1269afdae48f",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/main.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/save_manager.m",
+          "bytes": 46307,
+          "sha256": "f84163ca1c6a953293dbf51e20e91fe6338ad96aaf3b48b7f83a180184df2e3e",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/save_manager.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/keyboard_bridge.m",
+          "bytes": 3104,
+          "sha256": "96a539d9da97bc9c5f3609afb737dd8990f391327345c955b04c1ca2cb25e9e6",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/keyboard_bridge.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/wrapper_preferences.m",
+          "bytes": 5485,
+          "sha256": "082f8862a19536731a8bc94b04d46dc58189a5d65ce621e29bb792e308c8ec07",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/wrapper_preferences.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/phone_display_policy.h",
+          "bytes": 573,
+          "sha256": "92ff1a281bc7164a22506f3a99e374fb85ef56438dc42546cd2ed7873aa3c651",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/phone_display_policy.h"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitwindow.m",
+          "bytes": 19914,
+          "sha256": "7bfa0fc5906b81276a753ab0835b0c6c3b2b4f20eee1deceb62bcd38aa00835f",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Vendor/SDL2/src/video/uikit/SDL_uikitwindow.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitview.m",
+          "bytes": 17006,
+          "sha256": "4b9c2751847c9074164f056be59a176f7d51aec40eb209c3d720549cb7bc12ae",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Vendor/SDL2/src/video/uikit/SDL_uikitview.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitviewcontroller.m",
+          "bytes": 18758,
+          "sha256": "4ffd66a66a841aded3f8bbd0a02604c67e5f0067fd9101f59b8f6967c2898f11",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Vendor/SDL2/src/video/uikit/SDL_uikitviewcontroller.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitopenglview.m",
+          "bytes": 13953,
+          "sha256": "54577ffc7b75f6c5c7268c12341897a3cb3a013bb46db36b9db768b35dea805d",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Vendor/SDL2/src/video/uikit/SDL_uikitopenglview.m"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/frame_pacing_policy.c",
+          "bytes": 3136,
+          "sha256": "6635fd0d38d0c815fb555a1ae95f540ff05d2f562807c7d671f7b6b09cd40495",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/frame_pacing_policy.c"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/frame_pacing.m",
+          "bytes": 5076,
+          "sha256": "007f61119d33ee6639dd02a35d42b72f8a246cee1bd54c613d46b9677ad1cd35",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/frame_pacing.m"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/fps_overlay.m",
+          "bytes": 6766,
+          "sha256": "021b9cc3c4c43555440ce5f31f27db9acc6413486f7a9af7bca4af11f65a03d0",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/fps_overlay.m"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/rust-entry/src/lib.rs",
+          "bytes": 6324,
+          "sha256": "1a0e44a07b159da51a3442e1e2a66e38a7e9bc6c3a5f90c526e44c60f995261c",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/lib.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/rust-entry/src/runtime_settings.rs",
+          "bytes": 15836,
+          "sha256": "54ff4870b2a0f4b685173f7423dd22a69c30c6a8fd44d5ffd4f5f74d451361d0",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/runtime_settings.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/environment.rs",
+          "bytes": 96834,
+          "sha256": "d581144b39b3e9ca5aab1a7507baffb231965a1e936c43c788cdc264acf24eba",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/environment.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/dyld.rs",
+          "bytes": 36795,
+          "sha256": "4f57cc1e28eb03843ccde30bd7ce0a22b98dc17ed85cb8db983f3f2b60f684b6",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/dyld.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/diagnostics.rs",
+          "bytes": 15689,
+          "sha256": "3846c8b2c00c493f1bfdeaaef75f9913b6e28e2547552b705c8f16bbc3884228",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/diagnostics.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_ui_cadence.rs",
+          "bytes": 11627,
+          "sha256": "e48d319f94391c6feae29455895ec2d77334fb877f5f8602dbd500aaa5124c0c",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/peggle_ui_cadence.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/font_bucket.rs",
+          "bytes": 3348,
+          "sha256": "72e2e1ed1b36a696438d9cdd67d47c430c8c9f2187f102ac78075529a0c65b54",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/font_bucket.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_native_batch.rs",
+          "bytes": 9463,
+          "sha256": "5b73aef6d746f9ba2107b5512d6c48f332ec4ac84ae0775a8cd9790fc9ee4aaa",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/peggle_native_batch.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_font_lookup.rs",
+          "bytes": 7944,
+          "sha256": "c896f0ac169a62040724102911a64dacda383f0c887a0c0e51b1d7f41c7cc4af",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/peggle_font_lookup.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_mapped_char.rs",
+          "bytes": 7576,
+          "sha256": "451f852fc61ddc5e3eb954be6c00a8842c210244f1431d615a54bc0312b40691",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/peggle_mapped_char.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_inflate_fast.rs",
+          "bytes": 4864,
+          "sha256": "3b18430f692b349a516e31787505479edc8c270228aa20047571289f6b93d9bd",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/compatibility-core/src/peggle_inflate_fast.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/save_manager.rs",
+          "bytes": 24415,
+          "sha256": "de47f0f53f3f31b47e09cde5c3521f99fa7b2f08f30e449d876208caa0669c15",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/save_manager.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/save_manager_bridge.rs",
+          "bytes": 8783,
+          "sha256": "e6d415fd872e4aadcb887b9bd2cacf624671034672dfc92e7a4479a9211e784f",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/save_manager_bridge.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/raw_import.rs",
+          "bytes": 23999,
+          "sha256": "bf8fccf3ca91f7acff551a284ea09ac391b7ab76d307d0715c31dd26610fbda8",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/raw_import.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/raw_import_tests.rs",
+          "bytes": 17247,
+          "sha256": "4c76e90bf1f261ee473e4bc31061906ee9401a909e988a47382d9c2874bbd694",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/raw_import_tests.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/progress.rs",
+          "bytes": 18029,
+          "sha256": "4f4070f144cd2ed29f0e9d80e07036188bf25c3180663ac60db46b84d748e6b9",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/progress.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/progress_tests.rs",
+          "bytes": 13697,
+          "sha256": "2c9cde7bdd957982c04dcd8293ba1924c2ce484bd0fb4c5c3da6514f4bcf88f6",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/progress_tests.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/save_manager_tests.rs",
+          "bytes": 17900,
+          "sha256": "ee6f62a85009e889508cb6bf9edd62fb2ce5778a3300af34927d3a9a789539df",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/save_manager_tests.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/nights.rs",
+          "bytes": 5967,
+          "sha256": "f8a2d76f4564f3368dbf86610a755d02e3aa40ea72e7fc3b583b07cceb371054",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/rust-entry/src/nights.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Tests/SaveManager/Cargo.toml",
+          "bytes": 311,
+          "sha256": "dbeb480e73cc1fec107f77509d526932cfc09efafb846a8b246adc5041cc0a09",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Tests/SaveManager/Cargo.toml"
+        },
+        {
+          "topic": "save_files",
+          "path": "Tests/SaveManager/src/lib.rs",
+          "bytes": 270,
+          "sha256": "64bf3487b77b54f947b5ae0b4e5e08053d2962e7f59c30348223b5304e02e8aa",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Tests/SaveManager/src/lib.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Tests/progress/README.md",
+          "bytes": 258,
+          "sha256": "825dc169bc770c0c1b87eb35010556696803e4d256db08b660443b2d8aea8614",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Tests/progress/README.md"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/auto_progress.m",
+          "bytes": 13443,
+          "sha256": "8e3758477851c23ee80e874e2d4ea8d69bd285950b7d375565fafb352122a090",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/auto_progress.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/cloud_progress.m",
+          "bytes": 10070,
+          "sha256": "e89146e928a3896189640d32b1000c638d1addcd43292450dbd8f264e46b33d9",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/cloud_progress.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/cloud_capability.m",
+          "bytes": 3706,
+          "sha256": "e237a533fe8ce5af7b03f0c7239d26401f925d3f8066c0180c6d4d024fda099c",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/cloud_capability.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/folder_sync.m",
+          "bytes": 13318,
+          "sha256": "fce129b62d34d1d1b84113522b5ed3b463411618163330039402e8345a680c1f",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Compatibility/ios/folder_sync.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/CloudCapability/test_capability.py",
+          "bytes": 3707,
+          "sha256": "61ac406263ad025e0fd6d7513d8a08f94acd9c6bc39293e36a7540723c890ac1",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Tests/CloudCapability/test_capability.py"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/FolderSync/native_driver.m",
+          "bytes": 1246,
+          "sha256": "08a7e297a98dc3925a03b57eaedde7ba7461fb1cbce288e4cfe0fabeb044ab85",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Tests/FolderSync/native_driver.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/FolderSync/test_folder_sync.py",
+          "bytes": 6070,
+          "sha256": "c42d53b1b2155c3052a3e7eba198bb00689d8838ee7a04fb4a3d15a0f7eaa896",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Tests/FolderSync/test_folder_sync.py"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/FolderSync/Cargo.toml",
+          "bytes": 346,
+          "sha256": "c51d5d5bb8abc2fb01cbfa718646d4090cd1c52267147c65371f169c87df149b",
+          "url": "https://github.com/DylanMcD8/respring-peggle/blob/8f6629c3c1860bc9bc3902f3ff50d86a53373ee0/Tests/FolderSync/Cargo.toml"
+        }
+      ]
+    },
+    {
+      "app": "Peggle HD",
+      "repository": "https://github.com/DylanMcD8/respring-peggle-hd",
+      "commit": "fde8b99a34f2f1cb57ea59af2a4a722667578abd",
+      "files": [
+        {
+          "topic": "build_and_release",
+          "path": "BUILDING.md",
+          "bytes": 3836,
+          "sha256": "173aa65e1b04db92f8f4583ccd884cfc2094cacddc8916ff95129216213caea5",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/BUILDING.md"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "docs/ICLOUD.md",
+          "bytes": 5044,
+          "sha256": "7d1f31210d61899ec8072ecdc4360f86af2df11189d5962dd264212641c8cab4",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/docs/ICLOUD.md"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Scripts/package_ipa.py",
+          "bytes": 1745,
+          "sha256": "8b604c716e4e32e058dfe1303c6e73d236c2148e3d8a763f68deabcecfee7bc6",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Scripts/package_ipa.py"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Scripts/audit_release.py",
+          "bytes": 2398,
+          "sha256": "92810abea7ae97c10bfbf665076b501690fd2ef387260f1b04fc6a6b40935b5c",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Scripts/audit_release.py"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Original/payload-sha256.json",
+          "bytes": 107591,
+          "sha256": "53cc1640ab0a6bd1b842dd309f24c25151afc5fa546271109faaf3ffc8b74a07",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Original/payload-sha256.json"
+        },
+        {
+          "topic": "build_and_release",
+          "path": "Compatibility/ios/build.sh",
+          "bytes": 8038,
+          "sha256": "1e4cb100b8347994bb94f196534cbb4b315127ec443066699c43d42e61075974",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/build.sh"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/main.m",
+          "bytes": 7931,
+          "sha256": "5969c4a442b60a4d874eaae1b609219cad3ec987d0a8d7d159ec4b019b065668",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/main.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/save_manager.m",
+          "bytes": 46123,
+          "sha256": "6946ec689a9c0e07f9301554e8a5e54b24442025a685237f5a584e4ef3b3f030",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/save_manager.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/keyboard_bridge.m",
+          "bytes": 2965,
+          "sha256": "9b5df606f96ea1728bb46ee44b2a9bb4e958a3beaa4cdea89107872ffdceb28c",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/keyboard_bridge.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Compatibility/ios/wrapper_preferences.m",
+          "bytes": 3075,
+          "sha256": "15f355b187934fd4d02aa18956299648943b3d43c61ca6e135abbaad79aed668",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/wrapper_preferences.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitwindow.m",
+          "bytes": 19901,
+          "sha256": "2cba19ac5ceafef2af02d40b4f80fba6acdd022d4bb8b2979ab3d99ef21de772",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Vendor/SDL2/src/video/uikit/SDL_uikitwindow.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitview.m",
+          "bytes": 17006,
+          "sha256": "4b9c2751847c9074164f056be59a176f7d51aec40eb209c3d720549cb7bc12ae",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Vendor/SDL2/src/video/uikit/SDL_uikitview.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitviewcontroller.m",
+          "bytes": 18758,
+          "sha256": "4ffd66a66a841aded3f8bbd0a02604c67e5f0067fd9101f59b8f6967c2898f11",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Vendor/SDL2/src/video/uikit/SDL_uikitviewcontroller.m"
+        },
+        {
+          "topic": "host_ui_display_input",
+          "path": "Vendor/SDL2/src/video/uikit/SDL_uikitopenglview.m",
+          "bytes": 13953,
+          "sha256": "54577ffc7b75f6c5c7268c12341897a3cb3a013bb46db36b9db768b35dea805d",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Vendor/SDL2/src/video/uikit/SDL_uikitopenglview.m"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/frame_pacing_policy.c",
+          "bytes": 3136,
+          "sha256": "6635fd0d38d0c815fb555a1ae95f540ff05d2f562807c7d671f7b6b09cd40495",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/frame_pacing_policy.c"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/frame_pacing.m",
+          "bytes": 5076,
+          "sha256": "007f61119d33ee6639dd02a35d42b72f8a246cee1bd54c613d46b9677ad1cd35",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/frame_pacing.m"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/fps_overlay.m",
+          "bytes": 6662,
+          "sha256": "baaa81168742ff6b8e7ed95b81b17f88912f512eabf180019261d74cd9ace88d",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/fps_overlay.m"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/rust-entry/src/lib.rs",
+          "bytes": 5929,
+          "sha256": "5ea7cc4d5495df078d321e03ead1ed93e76961228a229038405eaf9c17892a86",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/lib.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/ios/rust-entry/src/runtime_settings.rs",
+          "bytes": 15836,
+          "sha256": "54ff4870b2a0f4b685173f7423dd22a69c30c6a8fd44d5ffd4f5f74d451361d0",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/runtime_settings.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/environment.rs",
+          "bytes": 96878,
+          "sha256": "af1553536ba01b2e7facaa4ad59f704176e2f618d6a01a8af28de62c4f5dc068",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/environment.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/dyld.rs",
+          "bytes": 36795,
+          "sha256": "4f57cc1e28eb03843ccde30bd7ce0a22b98dc17ed85cb8db983f3f2b60f684b6",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/dyld.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/diagnostics.rs",
+          "bytes": 15689,
+          "sha256": "dd1e5b4a5a722e02e52f9dd9e0417807459bfa4438c9f6b97cb6c7ca1f18ad02",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/diagnostics.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_ui_cadence.rs",
+          "bytes": 11629,
+          "sha256": "e6100af363b5479352cf5858e9b6871385302b433673c9e7fac543bcafd5ebae",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/peggle_ui_cadence.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/font_bucket.rs",
+          "bytes": 3348,
+          "sha256": "c3d5465d95d4a9205c1e36d28b2e537f956a8a40559572f12d4fd00df3cee685",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/font_bucket.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_native_batch.rs",
+          "bytes": 9463,
+          "sha256": "80353c4be7072d8b4954ed25588a52899bbfa682fed673ede27ad6e8970d43e5",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/peggle_native_batch.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_font_lookup.rs",
+          "bytes": 7944,
+          "sha256": "2397e314efeaeb0a6b4b61ea88bd782cabba18f865f78c7b07331ac009635a56",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/peggle_font_lookup.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_mapped_char.rs",
+          "bytes": 7576,
+          "sha256": "83d0bcada4405fd24c9c01a834984a29ea2044ef2fd2bd4410785ddfdccfe0c6",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/peggle_mapped_char.rs"
+        },
+        {
+          "topic": "runtime_timing_acceleration",
+          "path": "Compatibility/compatibility-core/src/peggle_inflate_fast.rs",
+          "bytes": 4864,
+          "sha256": "0a55ca9fdc0fb0e921ae2a53d7bcfb6898f8bd90f476212421f5dc31bf18cdf0",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/compatibility-core/src/peggle_inflate_fast.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/save_manager.rs",
+          "bytes": 24397,
+          "sha256": "860271b856e988dbee73868feaa5a9a26c71c11dbbcc400be7f7d3788db3bbac",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/save_manager.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/save_manager_bridge.rs",
+          "bytes": 8786,
+          "sha256": "e9457c65231a972c64851b8dc023c6aa7e1c4194e8415a23f96dc73629b89975",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/save_manager_bridge.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/raw_import.rs",
+          "bytes": 23999,
+          "sha256": "bf8fccf3ca91f7acff551a284ea09ac391b7ab76d307d0715c31dd26610fbda8",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/raw_import.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/raw_import_tests.rs",
+          "bytes": 17247,
+          "sha256": "4c76e90bf1f261ee473e4bc31061906ee9401a909e988a47382d9c2874bbd694",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/raw_import_tests.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/progress.rs",
+          "bytes": 18029,
+          "sha256": "4f4070f144cd2ed29f0e9d80e07036188bf25c3180663ac60db46b84d748e6b9",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/progress.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/progress_tests.rs",
+          "bytes": 13697,
+          "sha256": "2c9cde7bdd957982c04dcd8293ba1924c2ce484bd0fb4c5c3da6514f4bcf88f6",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/progress_tests.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/save_manager_tests.rs",
+          "bytes": 17896,
+          "sha256": "517477eea02c042116c46a1e8ff6737eaa8985fad7a82d437181a4e916af0bfb",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/save_manager_tests.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Compatibility/ios/rust-entry/src/nights.rs",
+          "bytes": 5967,
+          "sha256": "f8a2d76f4564f3368dbf86610a755d02e3aa40ea72e7fc3b583b07cceb371054",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/rust-entry/src/nights.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Tests/SaveManager/Cargo.toml",
+          "bytes": 311,
+          "sha256": "dbeb480e73cc1fec107f77509d526932cfc09efafb846a8b246adc5041cc0a09",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Tests/SaveManager/Cargo.toml"
+        },
+        {
+          "topic": "save_files",
+          "path": "Tests/SaveManager/src/lib.rs",
+          "bytes": 270,
+          "sha256": "64bf3487b77b54f947b5ae0b4e5e08053d2962e7f59c30348223b5304e02e8aa",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Tests/SaveManager/src/lib.rs"
+        },
+        {
+          "topic": "save_files",
+          "path": "Tests/progress/README.md",
+          "bytes": 258,
+          "sha256": "825dc169bc770c0c1b87eb35010556696803e4d256db08b660443b2d8aea8614",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Tests/progress/README.md"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/auto_progress.m",
+          "bytes": 13443,
+          "sha256": "8e3758477851c23ee80e874e2d4ea8d69bd285950b7d375565fafb352122a090",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/auto_progress.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/cloud_progress.m",
+          "bytes": 10070,
+          "sha256": "e89146e928a3896189640d32b1000c638d1addcd43292450dbd8f264e46b33d9",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/cloud_progress.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/cloud_capability.m",
+          "bytes": 3706,
+          "sha256": "e237a533fe8ce5af7b03f0c7239d26401f925d3f8066c0180c6d4d024fda099c",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/cloud_capability.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Compatibility/ios/folder_sync.m",
+          "bytes": 13318,
+          "sha256": "fce129b62d34d1d1b84113522b5ed3b463411618163330039402e8345a680c1f",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Compatibility/ios/folder_sync.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/CloudCapability/test_capability.py",
+          "bytes": 3707,
+          "sha256": "61ac406263ad025e0fd6d7513d8a08f94acd9c6bc39293e36a7540723c890ac1",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Tests/CloudCapability/test_capability.py"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/FolderSync/native_driver.m",
+          "bytes": 1246,
+          "sha256": "08a7e297a98dc3925a03b57eaedde7ba7461fb1cbce288e4cfe0fabeb044ab85",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Tests/FolderSync/native_driver.m"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/FolderSync/test_folder_sync.py",
+          "bytes": 6070,
+          "sha256": "c42d53b1b2155c3052a3e7eba198bb00689d8838ee7a04fb4a3d15a0f7eaa896",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Tests/FolderSync/test_folder_sync.py"
+        },
+        {
+          "topic": "sync",
+          "path": "Tests/FolderSync/Cargo.toml",
+          "bytes": 346,
+          "sha256": "c51d5d5bb8abc2fb01cbfa718646d4090cd1c52267147c65371f169c87df149b",
+          "url": "https://github.com/DylanMcD8/respring-peggle-hd/blob/fde8b99a34f2f1cb57ea59af2a4a722667578abd/Tests/FolderSync/Cargo.toml"
+        }
+      ]
+    }
+  ]
+}
