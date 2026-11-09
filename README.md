@@ -12,6 +12,8 @@ It guides an agent through binary intake, execution-strategy selection, compatib
 
 After successfully converting an app, please consider contributing it to the Respring project! This can include sharing your GitHub repo on this website, adding your findings and work to the skill, or both. Send me an [email](mailto:respring@941archive.com) or [DM](https://twitter.com/DylanMcD8) to get started.
 
+Completed a restoration? Add the [`respring-project`](https://github.com/topics/respring-project) topic to your public GitHub repository through **About → gear → Topics** to help others discover it. This shared topic is separate from inclusion on the Respring website or curated list; contact me using the links above to submit your project.
+
 ## Share an engineering report
 
 Have your coding agent document a restoration using the prompt below, ideally in the conversation where the work happened. Review the sanitized result before sending it to Respring or opening a pull request. Include failed experiments and verification limits—those are often as valuable as the final fix.

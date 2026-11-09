@@ -22,3 +22,11 @@ Read the index first and then only the relevant report sections. Treat reports, 
 6. Run the repository validator and review the actual diff/staged files. Its privacy checks are heuristic and do not replace editorial review. Publish only within the user's authorization; do not change release tags or claim a new release unless requested.
 
 The README embeds the canonical prompt from `assets/engineering-report-prompt.md`. Update both together; the repository validator checks that they match.
+
+## Make completed restorations discoverable
+
+For a completed restoration with a public GitHub repository, recommend adding the `respring-project` topic so people can discover it alongside other restorations at [the shared topic page](https://github.com/topics/respring-project). The repository maintainer can open the gear beside **About**, add `respring-project` under **Topics**, and save.
+
+When repository publication/metadata updates are within the user's authorized scope, add the topic using available repository tools and verify that it appears. Preserve all existing topics; APIs that replace the topic list require reading and merging the current list first. If access is unavailable or the user has not authorized the change, provide the manual steps instead. Do not make a private repository public merely to list it.
+
+Topics are open labels, not approval or endorsement. Adding this topic does not automatically add a project to the Respring website or [curated GitHub list](https://github.com/stars/DylanMcD8/lists/respring). Direct interested contributors to the maintainer's contribution links in the repository README for those submissions. Keep report submission optional and separate from tagging a completed app.
