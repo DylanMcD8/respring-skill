@@ -3,7 +3,7 @@
 import json
 import re
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / 'skills/restore-legacy-ios-apps'
@@ -13,7 +13,8 @@ def validate(root=ROOT):
     errors = []
     skill = root / 'skills/restore-legacy-ios-apps'
     required = ['SKILL.md', 'agents/openai.yaml', 'assets/investigation-record.md',
-                'references/source-evidence.json', 'references/sources.md']
+                'references/source-evidence.json', 'references/sources.md',
+                'assets/engineering-report-prompt.md', 'references/reporting.md']
     for name in required:
         if not (skill / name).is_file():
             errors.append('Missing: ' + name)
@@ -28,7 +29,7 @@ def validate(root=ROOT):
         if fields.get('name') != skill.name or not fields.get('description'):
             errors.append('Incorrect name or missing description')
     for path in root.rglob('*'):
-        if path.suffix not in ('.md', '.json', '.yaml'):
+        if '.git' in path.relative_to(root).parts or path.suffix not in ('.md', '.json', '.yaml'):
             continue
         text = path.read_text()
         if re.search(r'/Users/|/home/[^/]+/|BEGIN (?:RSA |OPENSSH )?PRIVATE KEY', text):
@@ -38,12 +39,18 @@ def validate(root=ROOT):
         if path.suffix != '.md':
             continue
         for target in re.findall(r'\]\(([^)]+)\)', text):
-            if '://' in target or target.startswith('#'):
+            if urlsplit(target.strip('<>')).scheme or target.startswith('#'):
                 continue
             target = unquote(target.split('#')[0].strip('<>'))
             resolved = (path.parent / target).resolve()
             if root.resolve() not in resolved.parents or not resolved.exists():
                 errors.append('Broken/escaping link: ' + target + ' in ' + str(path.relative_to(root)))
+    readme = (root / 'README.md').read_text()
+    embedded = re.search(r'<!-- report-prompt:start -->\n```text\n(.*?)```\n<!-- report-prompt:end -->', readme, re.S)
+    if not embedded or embedded[1] != (skill / 'assets/engineering-report-prompt.md').read_text():
+        errors.append('README report prompt differs from canonical prompt')
+    if not (root / 'reports/README.md').is_file():
+        errors.append('Missing engineering report index')
     evidence = json.loads((skill / 'references/source-evidence.json').read_text())
     for repo in evidence['repositories']:
         if not re.fullmatch(r'[0-9a-f]{40}', repo['commit']):

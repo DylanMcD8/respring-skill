@@ -1,6 +1,6 @@
 # Source provenance and confidence
 
-This skill synthesizes two internal research reports dated 25 October 2026: *Legacy iOS Restoration Report* and *Peggle and Peggle HD Engineering Report*. Their original evidence indexes were used to construct the public-only [source manifest](source-evidence.json). Internal reports, local machine paths, device identifiers and player data are not included.
+This skill synthesizes two internal research reports dated 25 October 2026: *Legacy iOS Restoration Report* and *Peggle and Peggle HD Engineering Report*. Their original evidence indexes were used to construct the public-only [source manifest](source-evidence.json). Sanitized public editions are now available in the [engineering report library](https://github.com/DylanMcD8/respring-skill/blob/main/reports/README.md). Original private reports, local machine paths, device identifiers and player data are not distributed. Public editions retain historical evidence limits and are not new test runs.
 
 ## Evidence levels
 
