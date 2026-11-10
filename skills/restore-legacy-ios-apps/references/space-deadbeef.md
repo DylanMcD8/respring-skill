@@ -4,6 +4,10 @@ Read this case when evaluating a small custom engine, software-to-Metal renderin
 
 The contributor reports an app-specific C++ ARMv6/Thumb interpreter that enters original gameplay below its UIKit wrapper. SwiftUI/native hosts replace exercised platform boundaries; Metal or software handles drawing. This is neither touchHLE nor AOT nor a gameplay rewrite. Consider this boundary when a symbol-rich custom game exposes tractable update/render/input entry points; do not assume it will suit exception-heavy or opaque engines. The report records narrow exception stubs, not verified throwing/unwinding. See report §§3, 5.1 and 6 before transferring that approach.
 
+## Optional platform adaptations
+
+Apple Watch and Apple TV are optional extensions, not default restoration targets or an initial feasibility checklist. Establish the requested iPhone/iPad experience first unless the user explicitly chose a different starting platform. Consult Crown, remote/focus, Watch executable-slice and TV storage details only when that platform is requested or already in scope. Do not add targets, run platform builds/tests, or delay the primary restoration merely because this report covers them. General timing, rendering and lifecycle lessons can still apply on the requested platform without opening a Watch/TV workstream.
+
 ## Source-reviewed lessons
 
 The following four implementations were read at the pinned snapshot during integration. Their historical tests and measurements were not rerun.

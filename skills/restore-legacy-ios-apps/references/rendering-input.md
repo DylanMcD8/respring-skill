@@ -51,4 +51,4 @@ Peggle's native keyboard failed because SDL focus depended on cached screen equa
 
 Keep touch cancellation, multiple fingers, realistic drag duration and post-rotation mapping in coverage. Home-gesture deferral is product-specific: useful for upward Skee throws, unnecessary for the final Koi/Chuzzle design. Do not copy it into every app.
 
-For ordered Metal batching, tight-atlas fixtures and native TV/Watch input ownership, see [SPACE DEADBEEF](space-deadbeef.md). Preserve draw order and buffer lifetime, and distinguish cancellation from release.
+For ordered Metal batching, tight-atlas fixtures and—only when those platforms are requested—native TV/Watch input ownership, see [SPACE DEADBEEF](space-deadbeef.md). Preserve draw order and buffer lifetime, and distinguish cancellation from release.
