@@ -50,3 +50,5 @@ Treat perspective/orthographic classification as an app-specific heuristic. Veri
 Peggle's native keyboard failed because SDL focus depended on cached screen equality. Focus should follow the actual key window. A stable root owns the hidden text field while GL children change. Validate responder acceptance, visible keyboard, forwarded text/Return and persisted guest user independently. XCTest `typeText` failing to target a hidden field is not proof that actual keyboard input fails.
 
 Keep touch cancellation, multiple fingers, realistic drag duration and post-rotation mapping in coverage. Home-gesture deferral is product-specific: useful for upward Skee throws, unnecessary for the final Koi/Chuzzle design. Do not copy it into every app.
+
+For ordered Metal batching, tight-atlas fixtures and native TV/Watch input ownership, see [SPACE DEADBEEF](space-deadbeef.md). Preserve draw order and buffer lifetime, and distinguish cancellation from release.

@@ -43,3 +43,5 @@ Freeze intended source/configuration, package matching source and binaries, hash
 Classify authoritative source, original inputs, irreplaceable evidence, releases, reproducible caches and temporary outputs before deleting. Resolve symlinks, verify replacement copies and use specific paths. Update the authority note after moves. Do not delete an old folder just because it is large or a public snapshot exists elsewhere.
 
 Record active jobs and stop task-owned tests/captures/keep-awake processes. Honor the user's current duration/deadline rules; the source projects had different preferences and neither is universal. Do not kill another task's processes. A final report should distinguish completed, user-confirmed, historical, inferred and untested results.
+
+Check the Mach-O platform load command in addition to CPU architecture: ARM64 alone does not distinguish device and Simulator builds. The [SPACE DEADBEEF case](space-deadbeef.md) also distinguishes per-slice Watch minimums from bundle deployment metadata.

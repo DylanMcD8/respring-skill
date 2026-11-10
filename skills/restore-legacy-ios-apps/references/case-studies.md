@@ -1,6 +1,6 @@
 # Case studies and transfer conditions
 
-Snapshot: 25 October 2026. These are distilled source-report findings, not tests rerun while creating this skill. See [sources.md](sources.md) and the adjacent public evidence manifest for pinned implementations.
+Original cases: 25 October 2026. SPACE DEADBEEF community case added 9 November 2026. These are distilled source-report findings, not tests rerun while creating this skill. See [sources.md](sources.md) and the adjacent public evidence manifest for pinned implementations.
 
 | App | Established approach | Important boundary |
 | --- | --- | --- |
@@ -10,6 +10,7 @@ Snapshot: 25 October 2026. These are distilled source-report findings, not tests
 | Skee Free | Related interpreted runtime with independent offline-service fixes | Similarity did not remove free-only SDK or menu differences |
 | Skee-Ball HD | ARMv6 interpreted Unity; VFP short-vector and iPad/scene fixes | Neither age nor branding proves same CPU requirements as phone siblings |
 | Peggle / Peggle HD | Interpreted ARMv7 with guarded native hot routines and native management host | Broad AOT was paused; selected helper compilation is not whole-program translation |
+| [SPACE DEADBEEF](space-deadbeef.md) | Custom bounded ARMv6/Thumb interpreter below UIKit; native multi-platform services and Metal/software drawing | App-specific compatibility subset; reported device results are not independently rerun |
 
 ## Failed approaches worth preserving
 

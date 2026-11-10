@@ -45,3 +45,5 @@ Peggle's bounded empty-font-bucket traversal stops before actual drawing and ret
 ## Stop conditions for an experiment
 
 Return to the working baseline when equivalence fails, guards cannot establish input safety, compilation/corpus validation remains incomplete, or net performance does not improve. Preserve the hypothesis and failure evidence. A paused broad AOT experiment is not the next mandatory step in a fidelity restoration. A full rewrite is a separate scope with gameplay, physics, assets, modes, UI, audio and save compatibility to reproduce.
+
+For an app-specific alternative to a broad framework runtime, see [SPACE DEADBEEF](space-deadbeef.md): entry below UIKit still retains interpreted guest semantics and explicitly limited exception support.

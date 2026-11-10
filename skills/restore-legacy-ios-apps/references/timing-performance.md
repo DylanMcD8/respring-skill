@@ -27,3 +27,5 @@ Profile CPU emulation/translation, API dispatch, texture uploads, copies/readbac
 For each comparison record device/OS, source build, exact scene, resolution, original/enhanced policy, power/thermal state, diagnostics, duration, warm-up exclusion, sample count and metric. Keep settings and scene comparable; label historical/user observations separately from controlled tests. Prefer distributions/frame-time outliers to a single peak FPS. Simulator slowness is not a hardware benchmark.
 
 Historical Chuzzle and Skee samples improved from roughly mid-20s to near60 submissions after direct presentation; these motivate investigation, not a performance guarantee. Peggle reports of near120 gameplay and slower menus were user observations, not a controlled table. No source counts or benchmark in this skill establish a universal native percentage.
+
+If update/callback averages look correct but motion is uneven, inspect zero-step and catch-up callbacks plus actual frame publications. See the [SPACE DEADBEEF phase and renderer case](space-deadbeef.md); its scheduling constants are app-specific.

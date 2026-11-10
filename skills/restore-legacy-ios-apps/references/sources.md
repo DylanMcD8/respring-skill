@@ -77,3 +77,7 @@ The manifest supplies commit-pinned public file locations and SHA-256 hashes. Ha
 No universal translator, complete CPU/framework conformance, exhaustive game parity, or long-duration thermal benchmark was established. Chuzzle/Koi generation counts are not executed coverage. Peggle broad AOT remained incomplete; the current report describes interpreted execution with guarded helpers. Peggle public folder tests established local coordinated exchanges, not end-to-end cloud delivery. A physical installation is not a gameplay/fold test. Historical user preferences on icons, aspect, deadlines and keep-awake are not global skill requirements.
 
 Read the relevant pinned file and effective startup path before transferring a technique. A moving README, older status note, inherited symbol name or disabled prototype must not override current implementation evidence.
+
+## Community report: SPACE DEADBEEF
+
+The [community case](space-deadbeef.md) and its linked full report were added on 9 November 2026. The report pins released source at `429100c0897c79bf6230118c1915179d597a5bbc` and distinguishes the later documentation-only main snapshot. Integration directly read GameFrameClock.swift, SDBMetalRenderer.mm, GameCrownInput.swift and GameLifecycle.swift at the release commit through GitHub. This limited review does not verify every contributor SOURCE assertion or historical test. The report has its own reference-style pinned index; the original 126-file evidence manifest remains unchanged and does not cover this contribution.

@@ -31,3 +31,5 @@ Within authorized scope, identify SDK startup hooks, singleton access, workers, 
 Skee Free's extra rewards SDK needed independent suppression even when paid/free Plus+ prologues matched. Local zero-initialized accessors were retained while network paths were disabled. Do not invent successful rewards, purchases or account responses. Entitlement/theme changes are separate from removing dead login UI and need the user's relevant scope.
 
 For a sibling port, verify engine version, slice, callbacks, globals and tests independently. Shared names and visuals are insufficient evidence.
+
+Include a missing interruption-end event and denied-then-successful audio activation in recovery checks. See [SPACE DEADBEEF](space-deadbeef.md) for independent scheduling, interaction and audio gates; its platform-specific inactivity choice is not universal.

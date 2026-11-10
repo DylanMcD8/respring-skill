@@ -18,7 +18,7 @@ Completed a restoration? Add the [`respring-project`](https://github.com/topics/
 
 Have your coding agent document a restoration using the prompt below, ideally in the conversation where the work happened. Review the sanitized result before sending it to Respring or opening a pull request. Include failed experiments and verification limits—those are often as valuable as the final fix.
 
-The [engineering report library](reports/README.md) contains detailed, sanitized case studies for agents to consult when needed. It currently covers Chuzzle, Koi Pond, Skee-Ball, Skee Free, Skee-Ball HD, Peggle and Peggle HD. Contributions from other projects can be added after privacy and evidence review; submitting a report does not automatically make all its recommendations skill rules.
+The [engineering report library](reports/README.md) contains detailed, sanitized case studies for agents to consult when needed. It currently covers Chuzzle, Koi Pond, Skee-Ball, Skee Free, Skee-Ball HD, Peggle, Peggle HD and the community contribution SPACE DEADBEEF. Contributions from other projects can be added after privacy and evidence review; submitting a report does not automatically make all its recommendations skill rules.
 
 ### Copyable report prompt
 
